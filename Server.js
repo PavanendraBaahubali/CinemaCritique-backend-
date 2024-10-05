@@ -26,8 +26,8 @@ const startServer = async () => {
     app.use('/tv-shows', ShowsRoute(db));
     app.use('/movies', MovieRoute(db));
     app.use('/genres', AllGenreRoute(db));
-    app.use('/movie', updateRoute(db));  // '/movie/:name' is accessible
-    app.use('/movie', MovieByIdRoute(db));  // '/movie/:name' is accessible
+    app.use('/movie', updateRoute(db));  
+    app.use('/movie', MovieByIdRoute(db));  
 
 
     app.listen(port, () => {
